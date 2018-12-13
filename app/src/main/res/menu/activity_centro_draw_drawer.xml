@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_eventos"
+            android:icon="@drawable/ic_folder_open_black_24dp"
+            android:title="Eventos"
+            />
+        <item
+            android:id="@+id/nav_logros"
+            android:icon="@drawable/ic_star_half_black_24dp"
+            android:title="Logros" />
+
+        <item
+            android:id="@+id/nav_settings"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Personalizar" />
+    </group>
+
+    <item android:title="Información">
+        <menu>
+            <item
+                android:id="@+id/nav_info"
+                android:icon="@drawable/ic_inf"
+                android:title="Ayuda" />
+
+        </menu>
+    </item>
+    <item android:title="Sesión">
+        <menu>
+            <item
+                android:id="@+id/nav_sesion"
+                android:icon="@drawable/ic_person_black_24dp"
+                android:title="Cerrar sesión" />
+
+        </menu>
+
+    </item>
+
+</menu>

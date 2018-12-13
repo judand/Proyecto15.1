@@ -1,0 +1,23 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- A 'parent' preference, which enables/disables child preferences (below)
+         when checked/unchecked. -->
+    <SwitchPreference
+        android:defaultValue="false"
+        android:key="notifications_all_message"
+        android:summary="@string/notificacion_todos"
+        android:title="Todo" />
+    <SwitchPreference
+        android:defaultValue="false"
+        android:key="notifications_new_message"
+        android:summary="@string/notificacion_interes"
+        android:title="Interes" />
+
+
+    <Preference
+
+        android:title="Click para guardar y salir"
+        android:key="savedata"/>
+
+
+</PreferenceScreen>

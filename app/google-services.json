@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "829404824092",
+    "firebase_url": "https://appmovileventos.firebaseio.com",
+    "project_id": "appmovileventos",
+    "storage_bucket": "appmovileventos.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:829404824092:android:f70b7bd7a8d2c7d8",
+        "android_client_info": {
+          "package_name": "com.example.prototipo1.proyecto15"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "829404824092-0au3j89jfb4jh529r04th207a9qcmamf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDnjZFNWfTK1YnWLIo4Zl97TJS7GJ36N_s"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

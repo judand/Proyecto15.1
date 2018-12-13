@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/Eventos"
+        android:fontFamily="@font/fuis"
+        android:title="Todos los Eventos"
+        android:icon="@drawable/ic_folder_open_black_24dp"
+
+        />
+
+    <item
+        android:id="@+id/all_bottom"
+        android:icon="@drawable/ic_art_track_black_24dp"
+        android:title="Mis eventos"
+        />
+
+    <item android:id="@+id/interes_buttom"
+        android:icon="@drawable/ic_done_all_black_24dp"
+        android:title="Asistiré" />
+
+
+
+
+</menu>

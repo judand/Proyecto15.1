@@ -1,0 +1,71 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+
+    <SwitchPreference
+
+        android:key="all_switch"
+        android:fontFamily="@font/fuis"
+        android:summary="@string/descripcion_todo"
+        android:title="Ver todos los eventos por defecto"
+        />
+
+    <CheckBoxPreference
+        android:summary="@string/descripcion_musica"
+        android:key="music_check"
+        android:fontFamily="@font/fuis"
+        android:enabled="false"
+        android:title="Música"
+        >
+    </CheckBoxPreference>
+    <CheckBoxPreference
+        android:summary="@string/descripcion_teatro"
+        android:key="teatro_check"
+        android:enabled="false"
+        android:fontFamily="@font/fuis"
+        android:title="Teatro">
+    </CheckBoxPreference>
+    <CheckBoxPreference
+        android:summary="@string/descripcion_conferencias"
+        android:key="conferencia_check"
+        android:enabled="false"
+        android:fontFamily="@font/fuis"
+        android:title="Conferencia">
+    </CheckBoxPreference>
+    <CheckBoxPreference
+        android:summary="@string/descripcion_danza"
+        android:key="danza_check"
+        android:enabled="false"
+        android:fontFamily="@font/fuis"
+        android:title="Danza">
+    </CheckBoxPreference>
+    <CheckBoxPreference
+        android:summary="@string/descripcion_foro"
+        android:key="foro_check"
+        android:enabled="false"
+        android:fontFamily="@font/fuis"
+        android:title="Foro">
+    </CheckBoxPreference>
+    <CheckBoxPreference
+        android:summary="@string/descripcion_taller"
+        android:key="taller_check"
+        android:enabled="false"
+        android:fontFamily="@font/fuis"
+        android:title="Taller">
+    </CheckBoxPreference>
+    <CheckBoxPreference
+        android:summary="@string/descripcion_exposicion"
+        android:key="exposicion_check"
+        android:enabled="false"
+        android:fontFamily="@font/fuis"
+        android:title="Exposición">
+    </CheckBoxPreference>
+
+    <Preference
+
+        android:title="Click para guardar y salir"
+        android:key="savedata"/>
+
+
+
+</PreferenceScreen>

@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".InfoActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="¿Qué son los logros?"
+                android:fontFamily="@font/fuis"
+                android:textColor="@color/colorAccent"
+                android:textSize="20sp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="10dp"
+                android:layout_marginStart="10dp"
+                android:text="Los logros son avances que tiene el usuario por ejercer ciertas acciones, al completar cierta cantidad de puntos se puede reclamar una recompensa."
+                android:fontFamily="@font/fuis"
+                android:textColor="@android:color/black"
+                android:textSize="15sp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="10dp"
+                android:text="¿Cómo funcionan las recompensas? "
+                android:fontFamily="@font/fuis"
+                android:textColor="@color/colorAccent"
+                android:textSize="20sp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="10dp"
+                android:layout_marginStart="10dp"
+                android:text="Para adquirir alguna de las recompensas descritas en el catalogo de puntos se deben de redimir con las puntos obtenidos en los logros de la pestalla progresos, los cuales al ser canjeados seran descontados segun el valor de la recompensa."
+                android:fontFamily="@font/fuis"
+                android:textColor="@android:color/black"
+                android:textSize="15sp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="¿Qué acciones me dan puntos?"
+                android:fontFamily="@font/fuis"
+                android:textColor="@color/colorAccent"
+                android:textSize="20sp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="10dp"
+                android:layout_marginStart="10dp"
+                android:text="Evaluar, dar me gusta,compartir,calificar, las cuales las encontraras de la siguiente manera"
+                android:fontFamily="@font/fuis"
+                android:textColor="@android:color/black"
+                android:textSize="15sp"
+                />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:src="@drawable/ic_favorite_blue_24dp"/>
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:src="@drawable/ic_done_all_black_24dp"/>
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:src="@drawable/ic_share_black_24dp"/>
+                <Button
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:backgroundTint="@color/cardview_light_background"
+                    android:gravity="center"
+                    android:text="Calificar"
+                    android:textColor="@color/colorPrimary"/>
+
+            </LinearLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="¿cuantos puntos recibo por cada acción?"
+                android:fontFamily="@font/fuis"
+                android:textColor="@color/colorAccent"
+                android:textSize="20sp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="10dp"
+                android:layout_marginStart="10dp"
+                android:text="Por cada acción efectuada se dan dos puntos."
+                android:fontFamily="@font/fuis"
+                android:textColor="@android:color/black"
+                android:textSize="15sp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="¿Si me sobran puntos se guardan al canjearlos?"
+                android:fontFamily="@font/fuis"
+                android:textColor="@color/colorAccent"
+                android:textSize="20sp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="10dp"
+                android:layout_marginStart="10dp"
+                android:text="Por cada canje de puntos la diferencia queda guardada para despues pero los progresos se reinician."
+                android:fontFamily="@font/fuis"
+                android:textColor="@android:color/black"
+                android:textSize="15sp"
+                />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>

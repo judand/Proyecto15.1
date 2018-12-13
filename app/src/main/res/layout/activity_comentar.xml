@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".DetalleActivityEventos"
+    android:background="#ffffff"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Logistica"
+            android:fontFamily="@font/fuis"
+            android:textSize="30dp"/>
+
+        <RatingBar
+            android:id="@+id/ratingBar_logistica"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:numStars="5"
+            android:layout_gravity="center"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Comodidad"
+            android:fontFamily="@font/fuis"
+            android:textSize="30dp"/>
+
+        <RatingBar
+            android:id="@+id/ratingBar_comodidad"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:numStars="5"
+            android:layout_gravity="center"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Entretención"
+            android:fontFamily="@font/fuis"
+            android:textSize="30dp"/>
+
+        <RatingBar
+            android:id="@+id/ratingBar_entretenido"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:numStars="5"
+            android:layout_gravity="center"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Interesante"
+            android:fontFamily="@font/fuis"
+            android:textSize="30dp"/>
+
+        <RatingBar
+            android:id="@+id/ratingBar_interesante"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:numStars="5"
+            android:layout_gravity="center"
+            />
+        <Button
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="calificar"
+            android:fontFamily="@font/fuis"
+            android:id="@+id/boton_calificar"
+            android:backgroundTint="@color/colorPrimaryDark"
+            />
+
+
+
+
+
+
+
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,65 @@
+{
+  "eventos": [
+    {
+      "id": 2001,
+      "nombre": "Concierto de musica clasica",
+      "pais": "Colombia",
+      "ciudad": "Bucaramanga",
+      "lugar": "Auditorio Ágora",
+      "fecha": "19/09/2018",
+      "hora": "14:00",
+      "sePaga": false,
+      "costoboleta": 0,
+      "descripcion": "La musica clasica es la corriente musical que casa principalmente la musica producida o basada en las tradiciones de la música liturgica y secular de Occidente, principalmente Europa Occidental",
+      "categoria": "musica",
+      "capacidad": 150,
+      "imagen": "http://thr2y3lcnnh2ths9v2z7pw0h.wpengine.netdna-cdn.com/wp-content/uploads/2017/03/clasica_0-810x539.jpg"
+    },
+    {
+      "id": 2002,
+      "nombre": "Concierto de rock",
+      "pais": "Colombia",
+      "ciudad": "Bucaramanga",
+      "lugar": "Auditorio Luis A. Calvo",
+      "fecha": "20/09/2018",
+      "hora": "19:00",
+      "sePaga": true,
+      "costoboleta": 8000,
+      "descripcion": " El rock es un término amplio que agrupa a una variedad de géneros de música popular. Su forma originaria, conocida como rock and roll, surgió mayormente de la combinación de dos géneros anteriores como eran el rhythm and blues y el country",
+      "categoria": "musica",
+      "capacidad": 250,
+      "imagen": "https://image.shutterstock.com/z/stock-vector-vintage-label-rock-and-roll-style-typography-elements-193422005.jpg"
+    },
+    {
+      "id": 2003,
+      "nombre": "Concierto de jazz",
+      "pais": "Colombia",
+      "ciudad": "Bucaramanga",
+      "lugar": "Auditorio al aire libre Jose Antonio Galan",
+      "fecha": "20/10/2018",
+      "hora": "17:30",
+      "sePaga": false,
+      "costoboleta": 0,
+      "descripcion": "El jazz es un género musical nacido a finales del siglo XIX en los Estados Unidos, que se expandió de forma global a lo largo de todo el siglo XX. ",
+      "categoria": "musica",
+      "capacidad": 550,
+      "imagen": "https://i.ytimg.com/vi/k_WRHdBGUog/maxresdefault.jpg"
+    },
+    {
+      "id": 2004,
+      "nombre": "Concierto Ricardo Gallo Cuarteto ",
+      "pais": "Colombia",
+      "ciudad": "Bucaramanga",
+      "lugar": "Auditorio Luis A. Calvo",
+      "fecha": "10/10/2018",
+      "hora": "19:30",
+      "sePaga": true,
+      "costoboleta": 10000,
+      "descripcion": "En este concierto, Ricardo Gallo Cuarteto estrena su quinto álbum titulado 'En Tránsito'.",
+      "categoria": "Concierto",
+      "capacidad": 2000,
+      "imagen": "https://universoabiertoblog.files.wordpress.com/2017/03/31.jpg"
+    }
+   
+  ]
+}

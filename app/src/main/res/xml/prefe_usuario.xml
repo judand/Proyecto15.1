@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+
+    <EditTextPreference
+
+        android:fontFamily="@font/fuis"
+        android:inputType="textEmailAddress"
+        android:key="correo_usuario_set"
+        android:summary="@string/correo_usuario"
+        android:maxLines="1"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        android:title="Correo usuario"
+        />
+    <EditTextPreference
+        android:fontFamily="@font/fuis"
+        android:inputType="text"
+        android:key="id_usuario_set"
+        android:summary="@string/usuario_id"
+
+        android:title="Id usuario"
+        android:maxLines="1"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+
+        />
+
+
+    <Preference
+
+        android:title="Click para guardar y salir"
+        android:key="savedata"/>
+
+    <Preference
+
+        android:title="Click para cerrar sesión"
+        android:key="exitlink"/>
+
+
+
+</PreferenceScreen>
