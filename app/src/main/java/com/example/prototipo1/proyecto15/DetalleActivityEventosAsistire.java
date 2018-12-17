@@ -48,6 +48,7 @@ public class DetalleActivityEventosAsistire extends AppCompatActivity {
         final int eventoid=intent.getIntExtra("extra_idevento",0);
         final int compartidos=intent.getIntExtra("extra_compartidos",0);
         final int mgusta=intent.getIntExtra("extra_megusta",0);
+        String morganiza = intent.getStringExtra("extra_organizador");
 
         //creacion del arraylist del boton compartir y boolean
         Integer[] share_user_but = new Integer[0];
@@ -86,6 +87,7 @@ public class DetalleActivityEventosAsistire extends AppCompatActivity {
         TextView textfecha=findViewById(R.id.text_fecha_deta);
         TextView texthora= findViewById(R.id.text_hora_deta);
         TextView textcostoboleta=findViewById(R.id.text_costoboleta_deta);
+        TextView textorganiza =findViewById(R.id.text_organiza_h);
         Button atras = findViewById(R.id.atras);
         Button compartir = findViewById(R.id.compartir);
         Button cancelar = findViewById(R.id.boton_cancelar);
@@ -324,6 +326,7 @@ public class DetalleActivityEventosAsistire extends AppCompatActivity {
         textdescripcion.setText(descrpcion);
         textfecha.setText("Fecha:"+fecha);
         texthora.setText("Hora:"+hora);
+        textorganiza.setText("Organiza: "+morganiza);
         if(costoboleta!=0){
             textcostoboleta.setText("Precio: $"+costoboleta);
         }else{

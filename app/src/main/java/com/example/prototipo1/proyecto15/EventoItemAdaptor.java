@@ -75,12 +75,14 @@ public class EventoItemAdaptor extends RecyclerView.Adapter<EventoItemAdaptor.It
         final int likes=currentitem.getMgusta();
         int mcostoboleta=currentitem.getMcostoboleta();
         boolean paga =currentitem.isMpaga();
+        final String organiza = currentitem.getMorganiza();
 
 
         itemViewHolder.mtexttitle.setText(mtitle);
         itemViewHolder.mtextlugar.setText("Lugar: "+mlugar);
         itemViewHolder.mtextfecha.setText("Fecha: "+mfecha);
         itemViewHolder.mlikes.setText(" "+likes);
+        itemViewHolder.morganiza.setText("Organiza: "+organiza);
         Picasso.get()
                 .load(mimage)
                 .fit()
@@ -451,6 +453,7 @@ public class EventoItemAdaptor extends RecyclerView.Adapter<EventoItemAdaptor.It
         public TextView mtextfecha;
         public TextView mcostoboleta;
         public TextView mlikes;
+        public TextView morganiza;
         Button boton_megusta;
         Button boton_asistir;
         Button boton_compartir;
@@ -467,6 +470,7 @@ public class EventoItemAdaptor extends RecyclerView.Adapter<EventoItemAdaptor.It
             mtextlugar=itemView.findViewById(R.id.text_lugar_h);
             mtextfecha=itemView.findViewById(R.id.text_fecha_h);
             mcostoboleta=itemView.findViewById(R.id.text_costoboleta_h);
+            morganiza= itemView.findViewById(R.id.text_organiza_h);
             mlikes=itemView.findViewById(R.id.text_likes);
 
             itemView.setOnClickListener(new View.OnClickListener() {

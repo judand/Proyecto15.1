@@ -135,12 +135,13 @@ public class centro extends AppCompatActivity implements EventoItemAdaptor.OnIte
                     int minteresante=evento.getInt("interesante");
                     int mcompartidos=evento.getInt("compartidos");
                     int minteresados=evento.getInt("interesados");
+                    String morganiza =evento.getString("organizador");
 
 
                     //creacion de cada objeto itemevent
 
 
-                    mitemevent.add(new EventoItem(titulo,imageurl,lugar,capacidad,descrpcion,fecha,hora,costoboleta,paga,categoria,megusta,idevento,objet,mlogistica,mcomodidad,mentretenido,minteresante,mcompartidos,minteresados));
+                    mitemevent.add(new EventoItem(titulo,imageurl,lugar,capacidad,descrpcion,fecha,hora,costoboleta,paga,categoria,megusta,idevento,objet,mlogistica,mcomodidad,mentretenido,minteresante,mcompartidos,minteresados,morganiza));
 
                 }
 

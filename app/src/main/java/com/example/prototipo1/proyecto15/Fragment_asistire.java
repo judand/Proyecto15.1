@@ -102,9 +102,10 @@ public class Fragment_asistire extends Fragment implements EventoAsistireItemAda
                         int minteresante = evento.getInt("interesante");
                         int mcompartidos = evento.getInt("compartidos");
                         int minteresados = evento.getInt("interesados");
+                        String morganiza = evento.getString("organizador");
 
                         //creacion de cada objeto EventoItem
-                        mitemevent.add(new EventoItem(titulo, imageurl, lugar, capacidad, descrpcion, fecha, hora, costoboleta, paga, categoria, megusta, idevento, objet, mlogistica, mcomodidad, mentretenido, minteresante, mcompartidos, minteresados));
+                        mitemevent.add(new EventoItem(titulo, imageurl, lugar, capacidad, descrpcion, fecha, hora, costoboleta, paga, categoria, megusta, idevento, objet, mlogistica, mcomodidad, mentretenido, minteresante, mcompartidos, minteresados,morganiza));
 
                     }
 
@@ -196,7 +197,7 @@ public class Fragment_asistire extends Fragment implements EventoAsistireItemAda
         detalleintent.putExtra("extra_idevento",clickitem.getMidevento());
         detalleintent.putExtra("extra_objet",clickitem.getMobjetid());
         detalleintent.putExtra("extra_compartidos",clickitem.getMcompartidos());
-
+        detalleintent.putExtra("extra_organizador",clickitem.getMorganiza());
         startActivity(detalleintent);
 
 
@@ -262,9 +263,10 @@ public class Fragment_asistire extends Fragment implements EventoAsistireItemAda
                                 int minteresante = evento.getInt("interesante");
                                 int mcompartidos = evento.getInt("compartidos");
                                 int minteresados = evento.getInt("interesados");
+                                String morganiza = evento.getString("organizador");
 
                                 //creacion de cada objeto EventoItem
-                                mitemevent.add(new EventoItem(titulo, imageurl, lugar, capacidad, descrpcion, fecha, hora, costoboleta, paga, categoria, megusta, idevento, objet, mlogistica, mcomodidad, mentretenido, minteresante, mcompartidos, minteresados));
+                                mitemevent.add(new EventoItem(titulo, imageurl, lugar, capacidad, descrpcion, fecha, hora, costoboleta, paga, categoria, megusta, idevento, objet, mlogistica, mcomodidad, mentretenido, minteresante, mcompartidos, minteresados,morganiza));
 
                             }
 
@@ -315,9 +317,10 @@ public class Fragment_asistire extends Fragment implements EventoAsistireItemAda
                                 int minteresante = evento.getInt("interesante");
                                 int mcompartidos = evento.getInt("compartidos");
                                 int minteresados = evento.getInt("interesados");
+                                String morganiza = evento.getString("organizador");
 
                                 //creacion de cada objeto itemevent
-                                mitemevent.add(new EventoItem(titulo, imageurl, lugar, capacidad, descrpcion, fecha, hora, costoboleta, paga, categoria, megusta, idevento, objet, mlogistica, mcomodidad, mentretenido, minteresante, mcompartidos, minteresados));
+                                mitemevent.add(new EventoItem(titulo, imageurl, lugar, capacidad, descrpcion, fecha, hora, costoboleta, paga, categoria, megusta, idevento, objet, mlogistica, mcomodidad, mentretenido, minteresante, mcompartidos, minteresados,morganiza));
                             }
 
                             mitemadaptor = new EventoAsistireItemAdaptor(getActivity(), mitemevent);
@@ -333,6 +336,60 @@ public class Fragment_asistire extends Fragment implements EventoAsistireItemAda
 
                 }
                 break;
+            case R.id.organizador_event:
+                if (vacio!=0) {
+
+
+                    Integer[] asistireArray = user.getList("favoritos").toArray(new Integer[0]);
+
+                    ParseQuery<ParseObject> eventos = new ParseQuery<ParseObject>("eventos");
+                    eventos.whereContainedIn("idevento", Arrays.asList(asistireArray));
+                    eventos.orderByAscending("organizador");
+                    eventos.findInBackground(new FindCallback<ParseObject>() {
+                        @Override
+                        public void done(List<ParseObject> objects, ParseException e) {
+                            hil = objects;
+                            for (int i = 0; i < hil.size(); i++) {
+                                ParseObject evento = hil.get(i);
+                                int idevento = evento.getInt("idevento");
+                                String objet = evento.getObjectId();
+                                String titulo = evento.getString("nombre");
+                                String lugar = evento.getString("lugar");
+                                String imageurl = evento.getString("imagen");
+                                int capacidad = evento.getInt("capacidad");
+                                String descrpcion = evento.getString("descripcion");
+                                String fecha = evento.getString("fecha");
+                                String hora = evento.getString("hora");
+                                int costoboleta = evento.getInt("costo");
+                                boolean paga = evento.getBoolean("sePaga");
+                                String categoria = evento.getString("categoria");
+                                int megusta = evento.getInt("meGusta");
+                                int mlogistica = evento.getInt("logistica");
+                                int mcomodidad = evento.getInt("comodidad");
+                                int mentretenido = evento.getInt("entretenido");
+                                int minteresante = evento.getInt("interesante");
+                                int mcompartidos = evento.getInt("compartidos");
+                                int minteresados = evento.getInt("interesados");
+                                String morganiza = evento.getString("organizador");
+
+                                //creacion de cada objeto itemevent
+                                mitemevent.add(new EventoItem(titulo, imageurl, lugar, capacidad, descrpcion, fecha, hora, costoboleta, paga, categoria, megusta, idevento, objet, mlogistica, mcomodidad, mentretenido, minteresante, mcompartidos, minteresados,morganiza));
+                            }
+
+                            mitemadaptor = new EventoAsistireItemAdaptor(getActivity(), mitemevent);
+                            mreciclerview.setAdapter(mitemadaptor);
+                            mitemadaptor.setOnItemClickLister(Fragment_asistire.this);
+
+                        }
+                    });
+                }
+                if (vacio==0) {
+                    Fragment_asistire.ViewDialog alert = new ViewDialog();
+                    alert.showDialog(getActivity(), "No hay eventos para ordenar");
+
+                }
+                break;
+
         }
         return super.onOptionsItemSelected(item);
     }

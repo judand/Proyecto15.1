@@ -22,9 +22,10 @@ public class EventoItem {
     private int minteresante;
     private int mcompartidos;
     private int minteresados;
+    private String morganiza;
 
 
-    public EventoItem(String title, String imageurl, String lugar, int capacidad, String descripcion, String fecha, String hora, int costoboleta, boolean paga, String categoria, int gusta, int idevento, String objetid, int logistica, int comodidad, int entretenido, int interesante, int compartidos, int interesados){
+    public EventoItem(String title, String imageurl, String lugar, int capacidad, String descripcion, String fecha, String hora, int costoboleta, boolean paga, String categoria, int gusta, int idevento, String objetid, int logistica, int comodidad, int entretenido, int interesante, int compartidos, int interesados,String organiza){
         mtitle=title;
         mimageurl=imageurl;
         mlugar=lugar;
@@ -44,6 +45,7 @@ public class EventoItem {
         minteresante= interesante;
         mcompartidos=compartidos;
         minteresados=interesados;
+        morganiza=organiza;
 
     }
 
@@ -121,5 +123,9 @@ public class EventoItem {
 
     public int getMinteresados() {
         return minteresados;
+    }
+
+    public String getMorganiza() {
+        return morganiza;
     }
 }

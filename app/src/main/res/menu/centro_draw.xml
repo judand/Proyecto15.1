@@ -12,5 +12,10 @@
         android:orderInCategory="100"
         android:title="Ordenar por fecha"
         app:showAsAction="never" />
+    <item
+        android:id="@+id/organizador_event"
+        android:orderInCategory="100"
+        android:title="Organizador"
+        app:showAsAction="never" />
 
 </menu>

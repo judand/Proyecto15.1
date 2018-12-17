@@ -161,6 +161,16 @@
                     android:fontFamily="@font/fuis"
                     android:layout_marginLeft="5dp"/>
                 <TextView
+                    android:id="@+id/text_organiza_h"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Organiza:"
+                    android:textSize="16dp"
+                    android:layout_marginLeft="5dp"
+                    android:fontFamily="@font/fuis"
+                    android:textColor="@color/colorAccent"
+                    android:textStyle="bold" />
+                <TextView
                     android:id="@+id/text_costoboleta_deta"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
